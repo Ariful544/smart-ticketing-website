@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/8256b326d8.js" crossorigin="anonymous"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bus ticketing</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'rgb(29, 209, 0)',
+                    },
+                    fontFamily: {
+                        raleway: ["Raleway", "sans-serif"],
+                        roboto: ["Roboto", "sans-serif"],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="box-border">
+    <header class=" max-w-screen-xl min-h-screen mx-auto mt-6">
+        <nav class="flex justify-between items-center">
+            <a class=" text-4xl font-raleway font-extrabold text-zinc-900" href="">P-Ticket</a>
+            <ul class="flex gap-14">
+                <li><a class="font-raleway hover:text-lime-500 duration-100 font-medium text-lg capitalize text-gray-950"
+                        href="">Home</a></li>
+                <li><a class="font-raleway hover:text-lime-500 duration-100 font-medium text-lg capitalize text-gray-950"
+                        href="">About</a></li>
+                <li><a class="font-raleway hover:text-lime-500 duration-100 font-medium text-lg capitalize text-gray-950"
+                        href="">Destination</a></li>
+                <li><a class="font-raleway hover:text-lime-500 duration-100 font-medium text-lg capitalize text-gray-950"
+                        href="">Search</a></li>
+            </ul>
+            <button
+                class="btn text-lg font-bold border-lime-400 hover:bg-lime-400 hover:text-white bg-lime-50 text-primary">Bus
+                <img class="mt-1" src="./images/bus-icon.png"></button>
+        </nav>
+        <!-- hero section -->
+        <div
+            class=" mt-9 relative rounded-[32px] min-h-screen w-full bg-[url('/images/banner.png')] bg-no-repeat bg-cover bg-blend-darken">
+            <!-- hero text -->
+            <div class="flex flex-col justify-center items-center">
+                <h1
+                    class=" text-6xl font-raleway font-extrabold leading-normal text-white flex flex-col mt-20 justify-center items-center">
+                    End-to-End Travel with<br> <span class=" text-primary">P Paribahan</span></h1>
+                <p class="text-white mt-4 text-center font-roboto text-lg font-normal">Yes, you can run unit tests and
+                    view the results directly within the app. The<br> integrated testing features allow for a
+                    streamlined .</p>
+                <a href=""
+                    class="btn text-center mt-8 px-6 bg-primary border-primary hover:text-primary hover:bg-white text-slate-950 font-bold text-xl">Buy
+                    Tickets</a>
+            </div>
+        </div>
+        <!-- stats -->
+        <div class="grid grid-cols-3 w-9/12 mx-10 gap-6 font-roboto absolute z-40 -mt-16">
+            <div
+                class="stats h-36 shadow border-b-2 border-primary px-14 overflow-hidden flex justify-center items-center">
+                <img class="w-14 h-14 mr-4" src="./images/people.png" alt="">
+                <div class="stat">
+                    <div class="stat-value font-bold text-4xl">500K+</div>
+                    <div class="stat-desc text-lg">Registered users</div>
+                </div>
+            </div>
+            <div
+                class="stats h-36 shadow border-b-2 border-primary px-14 overflow-hidden flex justify-center items-center">
+                <img class="w-14 h-14 mr-4" src="./images/ticket-cupon.png" alt="">
+                <div class="stat">
+                    <div class="stat-value">1.7 lacks</div>
+                    <div class="stat-desc text-lg">Tickets sold</div>
+                </div>
+            </div>
+            <div
+                class="stats h-36 shadow border-b-2 border-primary px-14 overflow-hidden flex justify-center items-center">
+                <img class="w-14 h-14 mr-4" src="./images/stoppage.png" alt="">
+                <div class="stat">
+                    <div class="stat-value">80K+</div>
+                    <div class="stat-desc text-lg">Rental partners</div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <!-- best offer section -->
+        <section class="max-w-screen-xl min-h-screen mx-auto pt-44">
+            <h1 class=" text-[40px] font-bold text-center font-raleway">Best offers for you</h1>
+            <!-- coupon card  -->
+            <div class="grid grid-cols-2 mt-12 gap-6">
+                <!-- 15% off offer -->
+                <div class=" h-[220px] flex ">
+                    <!-- text -->
+                    <div
+                        class="bg-yellow-400 font-roboto rounded-s-3xl flex flex-col items-center justify-center flex-1">
+                        <h3 class="text-5xl text-slate-800 font-extrabold">15% OFF</h3>
+                        <p class="ml-6 my-2 text-xl text-slate-800 opacity-90">on your next purchase</p>
+                        <p class="text-lg text-black opacity-60">use by January 2024</p>
+                    </div>
+                    <div class="bg-yellow-400"><img src="./images/cupon-devider.png" alt=""></div>
+                    <div class=" bg-yellow-400 w-2/5 rounded-e-3xl flex flex-col items-center justify-center">
+                        <p class=" uppercase font-raleway text-4xl font-extrabold">NEW<i>15</i></p>
+                        <p class="text-lg text-black opacity-60">Coupon Code</p>
+                    </div>
+                </div>
+                <!-- 20% off offer -->
+                <div class=" h-[220px] flex ">
+                    <!-- text -->
+                    <div class="bg-red-300 font-roboto rounded-s-3xl flex flex-col items-center justify-center flex-1">
+                        <h3 class="text-5xl text-slate-800 font-extrabold">20% OFF</h3>
+                        <p class="ml-6 my-2 text-xl text-slate-800 opacity-90">on your next purchase</p>
+                        <p class="text-lg text-black opacity-60">use by January 2024</p>
+                    </div>
+                    <div class="bg-red-300"><img src="./images/cupon-devider.png" alt=""></div>
+                    <div class=" bg-red-300 w-2/5 rounded-e-3xl flex flex-col items-center justify-center">
+                        <p class=" capitalize font-raleway text-4xl font-extrabold">Couple <i>20</i></p>
+                        <p class="text-lg text-black opacity-60">Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-20">
+                <button
+                    class="btn text-center text-primary border-primary hover:bg-primary font-bold text-xl hover:text-white px-6">See
+                    All Offers</button>
+            </div>
+        </section>
+
+        <!-- ticket details section -->
+        <section class="max-w-screen-2xl min-h-screen bg-stone-50 mt-32 border-t-2 border-primary  rounded-t-[88px]">
+            <div class="pt-32 text-center">
+                <h3 class=" text-[40px] font-bold font-raleway text-gray-800">P.H Paribahan</h3>
+                <p class=" text-gray-950 opacity-80">Yes, you can run unit tests and view the results directly within
+                    the app. The integrated<br> testing features allow for a streamlined .</p>
+            </div>
+            <div class=" font-raleway flex max-w-screen-xl mx-auto mt-12 ">
+                <div class="flex-1 bg-white rounded-s-3xl p-6">
+                    <div class="flex justify-between items-center">
+                        <div class="flex gap-4 justify-between items-center">
+                            <img class=" w-[70px] h-12" src="./images/bus-logo.png" alt="">
+                            <div>
+                                <h3 class=" text-3xl text-gray-950 font-bold">Greenline Paribahan</h3>
+                                <p class=" text-lg text-gray-950 opacity-60">Coach-009-WEB ! AC_Business</p>
+                            </div>
+                        </div>
+                        <button class="btn font-roboto text-primary bg-lime-100 hover:border-primary"><img
+                                src="./images/seat-green.png" alt="">40 Seats left</button>
+                    </div>
+                    <!-- ticket -->
+                    <div class="bg-stone-50 mt-8 rounded-3xl p-4">
+                        <div class="flex justify-between items-center border-b-2 border-dashed p-4">
+                            <p>Route</p>
+                            <p>Dhaka - Sylhet</p>
+                        </div>
+                        <div class="flex justify-between items-center border-b-2 border-dashed p-4">
+                            <p>Departure Time</p>
+                            <p>9:00 PM</p>
+                        </div>
+                        <div class="py-4 flex justify-between">
+                            <button class="btn font-roboto font-medium text-base px-8 text-gray-950 opacity-80">Boarding
+                                Point - Laxmipur</button>
+                            <button class="btn font-roboto font-medium text-base px-8 text-gray-950 opacity-80">Dropping
+                                Point - Bogura</button>
+                            <button class="btn font-roboto font-medium text-base px-8 text-gray-950 opacity-80">Est.
+                                Time - 11 Hour</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white"><img src="./images/info-devider.png" alt=""></div>
+                <div class=" w-1/5 flex flex-col justify-center items-center bg-white rounded-e-3xl">
+                    <img src="./images/fare.png" alt="">
+                    <p class=" text-3xl font-bold text-gray-800">550 Taka</p>
+                    <p class="text-base text-gray-800 opacity-60">Per Seat</p>
+                </div>
+            </div>
+            <!-- select your seat -->
+            <div class="font-raleway bg-white flex max-w-screen-xl min-h-screen mx-auto mt-6 rounded-3xl p-8 ">
+                <div class="flex-1 border-r-2 border-dashed px-8">
+                    <div class="border-b-2 border-dashed py-4">
+                        <h3 class=" text-2xl font-semibold text-gray-950">Select Your Seat</h3>
+                    </div>
+                    <!-- seat button -->
+                    <div class="flex justify-between py-4 border-b-2 border-dashed">
+                        <button class="btn text-gray-950 opacity-70"><img src="./images/seat-gray.png"
+                                alt="">Available</button>
+                        <button class="btn text-primary hover:border-primary opacity-70"><img
+                                src="./images/seat-green.png" alt="">Selected</button>
+                    </div>
+                    <!-- all seats -->
+                    <div class="">
+                        <div class="flex justify-between py-6">
+                            <div class="flex-1"></div>
+                            <div class=""> <button class="btn px-8 text-xl"><i
+                                        class="fa-solid fa-dharmachakra"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="font-roboto flex flex-col gap-6">
+                        <div class=" flex gap-4 justify-between items-center">
+                            <p class="">A</p>
+                            <button class="btn px-12 text-gray-950 opacity-60">A1</button>
+                            <button class="btn px-12 text-gray-950 opacity-60">A2</button>
+                            <button class="btn px-12 text-gray-950 opacity-60">A3</button>
+                            <button class="btn px-12 text-gray-950 opacity-60">A4</button>
+                        </div>
+                        <div class=" flex gap-4 justify-between items-center">
+                            <p class="">B</p>
+                            <button class="btn px-12 text-gray-950 opacity-60">B1</button>
+                            <button class="btn px-12 text-gray-950 opacity-60">B2</button>
+                            <button class="btn px-12 text-gray-950 opacity-60">B3</button>
+                            <button class="btn px-12 text-gray-950 opacity-60">B4</button>
+                        </div>
+                        <div class=" flex gap-4 justify-between items-center">
+                            <p class="">C</p>
+                            <button class="btn px-12 text-gray-950 opacity-60">C1</button>
+                            <button class="btn px-12 text-gray-950 opacity-60">C2</button>
+                            <button class="btn px-12 text-gray-950 opacity-60">C3</button>
+                            <button class="btn px-12 text-gray-950 opacity-60">C4</button>
+                        </div>
+                        <div class=" flex gap-4 justify-between items-center">
+                            <p class="">D</p>
+                            <button class="btn px-12 text-gray-950 opacity-60">D1</button>
+                            <button class="btn px-12 text-gray-950 opacity-60">D2</button>
+                            <button class="btn px-12 text-gray-950 opacity-60">D3</button>
+                            <button class="btn px-12 text-gray-950 opacity-60">D4</button>
+                        </div>
+                        <div class=" flex gap-4 justify-between items-center">
+                            <p class="">E</p>
+                            <button class="btn px-12 text-gray-950 opacity-60">E1</button>
+                            <button class="btn px-12 text-gray-950 opacity-60">E2</button>
+                            <button class="btn px-12 text-gray-950 opacity-60">E3</button>
+                            <button class="btn px-12 text-gray-950 opacity-60">E4</button>
+                        </div>
+                        <div class=" flex gap-4 justify-between items-center">
+                            <p class="">F</p>
+                            <button class="btn px-12 text-gray-950 opacity-60">F1</button>
+                            <button class="btn px-12 text-gray-950 opacity-60">F2</button>
+                            <button class="btn px-12 text-gray-950 opacity-60">F3</button>
+                            <button class="btn px-12 text-gray-950 opacity-60">F4</button>
+                        </div>
+                        <div class=" flex gap-4 justify-between items-center">
+                            <p class="">I</p>
+                            <button class="btn px-12 text-gray-950 opacity-60">I1</button>
+                            <button class="btn px-12 text-gray-950 opacity-60">I2</button>
+                            <button class="btn px-12 text-gray-950 opacity-60">I3</button>
+                            <button class="btn px-12 text-gray-950 opacity-60">I4</button>
+                        </div>
+                        <div class=" flex gap-4 justify-between items-center">
+                            <p class="">J</p>
+                            <button class="btn px-12 text-gray-950 opacity-60">J1</button>
+                            <button class="btn px-12 text-gray-950 opacity-60">J2</button>
+                            <button class="btn px-12 text-gray-950 opacity-60">J3</button>
+                            <button class="btn px-12 text-gray-950 opacity-60">J4</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" w-2/5 min-h-screen px-6">
+                    <div class="border-b-2 border-dashed p-4">
+                        <h3 class=" text-2xl font-semibold text-gray-950">Select Your Seat</h3>
+                    </div>
+                    <!-- seat reserved -->
+                    <div class="bg-stone-50 p-6 mt-4 rounded-xl">
+                        <div class="flex justify-between border-b-2 border-dashed pb-4 ">
+                            <p class="text-gray-950 font-medium text-base">Seat <sup
+                                    class="w-10 h-8 px-2 py-1 text-base bg-primary rounded-full">2</sup></p>
+                            <p class="text-gray-950 font-medium text-base">Class</p>
+                            <p class="text-gray-950 font-medium text-base">price</p>
+                        </div>
+                        <ul class="border-b-2">
+                            <li class="py-4">
+                                <p class="text-center text-red-600 text-3xl">No Seats Selected </p>
+                            </li>
+                            <li class="flex justify-between py-4 text-gray-950 opacity-60">
+                                <p>C2</p>
+                                <p>Economy</p>
+                                <p>550</p>
+                            </li>
+                        </ul>
+                        <!-- total -->
+                        <div class="font-roboto flex justify-between py-4">
+                            <p class="font-medium text-gray-700">Total price</p>
+                            <p class="font-medium text-gray-700">BDT <span>1000</span> Tk.</p>
+                        </div>
+                        <div class="bg-white flex w-full justify-between my-4 rounded-xl pl-2">
+                            <input type="text" placeholder="Have any coupon?" class=" bg-transparent outline-0 px-2">
+                            <button
+                                class="btn bg-primary hover:bg-transparent hover:text-black hover:border-primary text-white">Apply</button>
+                        </div>
+                        <div class="font-roboto flex justify-between py-4">
+                            <p class="font-medium text-gray-700">Grand Total</p>
+                            <p class="font-medium text-gray-700">BDT <span>1000</span> Tk.</p>
+                        </div>
+                    </div>
+                    <!-- form -->
+                    <div class="card w-full">
+                        <form class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text text-gray-950 font-bold">Passenger Name*</span>
+                                </label>
+                                <input type="text" placeholder="Enter your name" class="input input-bordered" />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text text-gray-950 font-bold">Phone Number*</span>
+                                </label>
+                                <input type="number" placeholder="Enter your phone number" class="input input-bordered" required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text text-gray-950 font-bold">Email ID</span>
+                                </label>
+                                <input type="email" placeholder="Enter your email id" class="input input-bordered" />
+                            </div>
+                            <div class="form-control mt-6">
+                                <button class="btn bg-primary text-white font-bold">Next</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
